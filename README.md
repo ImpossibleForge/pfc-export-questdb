@@ -203,6 +203,12 @@ pfc-export-questdb v0.1.0 — Test Suite
 
 ---
 
+## Disclaimer
+
+pfc-export-questdb is an independent open-source project and is not affiliated with, endorsed by, or associated with QuestDB or its maintainers.
+
+---
+
 ## License
 
 pfc-export-questdb (this repository) is released under the MIT License — see [LICENSE](LICENSE).
