@@ -167,6 +167,8 @@ QuestDB table
     ▼  output.pfc  +  output.pfc.bidx  +  output.pfc.idx
 ```
 
+> **Note for programmatic use:** `pfc_jsonl` writes compression progress lines (e.g. `[PFC-JSONL] Compressing block 1/4...`) to stdout alongside the output. When parsing stdout programmatically, only process lines that start with `{`.
+
 ---
 
 ## Test results
