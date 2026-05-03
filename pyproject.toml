@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68,<77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pfc-export-questdb"
+version = "0.1.0"
+description = "Export QuestDB tables to PFC cold-storage archives with timestamp index"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.8"
+keywords = ["pfc", "jsonl", "compression", "questdb", "cold-storage", "archive", "timeseries"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Topic :: System :: Logging",
+    "Topic :: Database",
+    "Topic :: Utilities",
+]
+dependencies = ["psycopg2-binary>=2.9"]
+
+[project.scripts]
+pfc-export-questdb = "pfc_export_questdb:main"
+
+[project.urls]
+Homepage   = "https://github.com/ImpossibleForge/pfc-export-questdb"
+Repository = "https://github.com/ImpossibleForge/pfc-export-questdb"
+
+[tool.setuptools]
+py-modules = ["pfc_export_questdb"]
