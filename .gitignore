@@ -3,12 +3,12 @@ __pycache__/
 *.egg-info/
 dist/
 build/
-.env
-*.pfc
-*.pfc.bidx
-*.pfc.idx
-
-# PFC buffer files
-.pfc_buffer.jsonl
-.pfc_buffer.compressing
+.venv/
 venv/
+*.pfc
+*.bidx
+.pfc_buffer.*
+.env
+test-archives/
+test-logs/
+.pytest_cache/
